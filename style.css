@@ -1,43 +1,82 @@
-h1{
-    color: white;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-.isim{
-    color: rgb(187, 181, 5);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-hr{
-    border: 0;
-    height: 5px;
-    background: #2c014b;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-a { 
-    background-color: #4B0082; 
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    text-decoration: none; 
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid #8F00FF ;
-    
-    display: block; 
-    width: fit-content; 
-    margin: 10px auto;
+.sayfa {
+  background: url("resimler/anabr.jpeg");
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
-a:hover {
-    filter: brightness(120%);
-    transition: background-color 0.3s;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.556);
+  width: 100%;
+  height: 80px;
+  z-index: 1;
 }
 
-.instagram-link { background-color: #C13584; }
-.tiktok-link { background-color: #69C9D0; }
-.spotify-link { background-color: #1DB954; }
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 18px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 50px;
+  color: rgb(69, 0, 67);
+  font-family: "Italianno";
+}
+
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(115, 1, 111);
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: "Sriracha";
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: rgb(115, 1, 111);
+  color: black;
+  transition: 1s;
+  border-radius: 12px;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  margin: 20px 25%;
+}
+
+.links ul li img {
+  width: 200px;
+  height: 120px;
+  border-radius: 20px;
+  border: 3px rgb(12, 0, 14) solid;
+  overflow: hidden;
+}
+
+.links {
+  margin-top: 50px;
+}
 
